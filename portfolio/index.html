@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>My Porfolio</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="index.css"
+  />
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <body>
+    <nav class="navBarWrapper">
+      <h1>My Portfolio</h1>
+      <ul class="navItems">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutMe">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section
+      class="mainSection"
+      id="home"
+    >
+      <div class="mainElements introElement" data-aos="fade-right">
+        <div class="intro">
+          <p>Hii I'm,</p>
+          <h1 class="heroTitle">Vedant <span>Bhavsar</span></h1>
+          <p class="heroSubtitle">Web Developer</p>
+        </div>
+
+        <div class="aboutMe">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            porro fugiat cupiditate, accusantium impedit totam omnis sed
+            adipisci beatae atque nulla accusamus tempora sit? Tenetur minima
+            placeat officia dolorum laborum, perspiciatis recusandae ab quidem
+            eius quo adipisci deserunt temporibus iusto. Incidunt, autem
+            reprehenderit! Assumenda nisi adipisci nesciunt amet optio?
+            Expedita.
+          </p>
+        </div>
+      </div>
+      <div class="mainElements" data-aos="fade-left">
+        <img
+          class="heroImage"
+          alt="Hero Image"
+          src="https://images.unsplash.com/photo-1518644730709-0835105d9daa?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+      </div>
+    </section>
+    <section class="aboutMeSection" id="aboutMe">
+      <h2><span>About</span> Me</h2>
+      <div class="AboutMeCardWrapper" data-aos="fade-right">
+        <img
+          alt="about Image 1"
+          src="https://i.pinimg.com/736x/bb/e1/65/bbe165a516ad8e5640dc89763f3227ff.jpg"
+          class="aboutimageone"
+        />
+        <div>
+          <h3>
+            Who Am
+            <span class="red"> i </span>??
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+            itaque reiciendis velit cupiditate eum, eius error blanditiis minus,
+            fugiat voluptatibus eveniet maiores soluta voluptatem incidunt
+            doloremque architecto est culpa et? Dolorem tempore in placeat magni
+            impedit. Accusantium fugit aut nobis?
+          </p>
+        </div>
+      </div>
+      <div class="AboutMeCardWrapper" data-aos="fade-left">
+        <img
+          alt="about Image 2"
+          src="https://i.pinimg.com/564x/cb/1f/1c/cb1f1ce18bc28a15430f1ea696bcce2e.jpg"
+          class="aboutimageone"
+        />
+        <div>
+          <h3>What Do i <span class="red">Know </span>??</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+            itaque reiciendis velit cupiditate eum, eius error blanditiis minus,
+            fugiat voluptatibus eveniet maiores soluta voluptatem incidunt
+            doloremque architecto est culpa et? Dolorem tempore in placeat magni
+            impedit. Accusantium fugit aut nobis?
+          </p>
+        </div>
+      </div>
+      <div class="AboutMeCardWrapper"  data-aos="fade-right">
+        <img
+          alt="about Image 3"
+          src="https://i.pinimg.com/564x/b2/8e/b3/b28eb398b246a32ab8d8a352dc1eaed6.jpg"
+          class="aboutimageone"
+        />
+        <div>
+          <h3>
+            What Make Me
+            <span class="red"> Different </span>??
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+            itaque reiciendis velit cupiditate eum, eius error blanditiis minus,
+            fugiat voluptatibus eveniet maiores soluta voluptatem incidunt
+            doloremque architecto est culpa et? Dolorem tempore in placeat magni
+            impedit. Accusantium fugit aut nobis?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="contactSection" id="contact" data-aos="fade-right">
+        <div class="contactWrapper">
+            <br />
+            <br />
+            <h2><span class="red">Contact</span> Me</h2>
+            <br />
+            <br />
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit" name="submit">Send</button>
+            </form>
+        </div>
+    </section>
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
