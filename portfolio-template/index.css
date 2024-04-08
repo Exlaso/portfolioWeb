@@ -1,250 +1,26 @@
-*,
-html,
-body {
+*{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    scroll-behavior: smooth;
 }
-body {
-  background-color: rgb(30, 30, 33);
-  color: white;
-  display: flex;
-  gap:50px;
-  flex-direction: column;  
-  width: 100vw;
-  overflow-x: hidden;
-}
-
-
-.navBarWrapper {
-    position: fixed;
-    width: 100%;
+nav{
   background-color: aquamarine;
-  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: black;
-  z-index: 10;
+  padding:0px 10px;
 }
-
-.flexCenter {
+ul{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 20px;
 }
-
-.navItems {
-  display: flex;
-  gap: 5vw;
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-.mainSection {
-  display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
-}
-
-
-.heroImage {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  border-radius: 0px 0px 0 200px;
-  border-left: 4px solid red;
-  border-bottom: 4px solid red;
-}
-
-.intro {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-}
-.intro h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-.intro h1 span {
-  color: red;
-}
-.aboutMe {
-  padding: 20px;
-  gap: 10rem;
-  text-align: justify;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-.aboutMe p {
-  text-align: justify;
-}
-.heroSubtitle {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.introElement {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  padding: 50px;
-}
-
-.aboutMeSection {
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  
-}
-.aboutMeSection > div{
-    display: flex;
-    justify-items: center;
-  align-items: center;
-  flex-direction: row;
-}
-.aboutMeSection > div:nth-child(even){
-    flex-direction: row-reverse;
-
-}
-.aboutMeSection > div > div{
-display: flex;
-flex-direction: column;
-justify-content: start;
-align-items: start;
-gap: 20px;
-width: 50%;
-margin: 0 auto;
-color: rgb(150, 150, 153);
-}
-.aboutMeSection > div > div > h3{
-    font-size: 2rem;
-    color: white;
-}
-.aboutMeSection > div > div > p{
-    text-align: left;
-}
- 
-.aboutMeSection h2 {
-  font-size: 3rem;
-  margin: 20px 0;
-}
-
-.aboutMeSection h2 span {
-  color: red;
-}
-
-.red{
-    color: red;
-    
+li{
+  list-style: none;
 }
 section{
-    min-height: 100vh;
-    padding: 30px 0px;
+  height: 100vh;
+  border: 1px solid red;
 }
-section > h2{
-    font-size: 3rem !important;
-    text-align: center;
-    padding: 10px 0px;
-}
-
-.AboutMeCardWrapper {
+.mainSection{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: 0.8fr 1.2fr;
 }
-
-.AboutMeCardWrapper {
-  padding: 0 10vw;
-}
-.aboutimageone {
-  aspect-ratio: 1/1;
-  height: 40vh;
-  width: 40vh;
-  object-fit: cover;
-  border-radius: 3rem;
-}
-
-.contactSection{
-    height: 100vh;
-}
-.contactWrapper{
-    border-left: 0;
-    width: 80%;
-    border-radius: 30px;
-    border-start-start-radius: 0;
-    border-end-start-radius: 0;
-    height: 80%;
-    background-color: rgb(29, 29, 29);
-    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0);
-text-align: center; 
-}
-.contactWrapper h2{
-    font-size: 3rem;
-    padding: 20px;
-}
-.contactWrapper > div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    height: 100%;
-}
-.contactWrapper > form{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: space-evenly;
-    width: 50%;
-    margin: 0 auto
-}
-.contactWrapper > form > input,textarea{
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-}
-.contactWrapper button{
-    border-radius: 10px;
-    padding: 10px;
-    background-color: black;
-    outline: 0;
-    border: 0;
-    color: white;
-}
-
-@media only screen and (max-width: 800px) {
-    .mainSection {
-      grid-template-columns: 1fr;
-    }
-    .aboutMeSection > div{
-        flex-direction: column !important;
-    }
-    .aboutMeSection > div > div{
-        width: 100% !important;
-    }
-  .contactWrapper{
-    width: 95%;
-  }
-    .heroImage {
-      display: none;
-    }
-  }
-
-
