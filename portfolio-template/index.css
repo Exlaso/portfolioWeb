@@ -2,12 +2,19 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background-color:  rgb(30, 30, 33);
+}
 nav{
   background-color: aquamarine;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding:0px 10px;
+}
+
+.red{
+  color: red;
 }
 ul{
   display: flex;
@@ -18,9 +25,37 @@ li{
 }
 section{
   height: 100vh;
-  border: 1px solid red;
+color: white;
 }
 .mainSection{
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
+}
+h1{
+  font-size: 3rem;
+}
+p{
+  font-size: 1rem;
+}
+.mainSection > div:nth-child(1){
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50%;
+}
+
+.landingPageIntroSection{
+  display: flex;
+  justify-content: center;
+  
+  align-items: start;
+  flex-direction: column;
+}
+
+.LandingImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 20rem;
 }
